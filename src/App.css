@@ -144,8 +144,12 @@ button:hover {
 }
 
 .resultColumn p {
-	font-size: 18px;
+	font-size: 16px;
 	margin: 0;
+}
+
+.resultColumn p.res {
+	font-weight: 600;
 }
 
 .resultColumn span {
@@ -183,12 +187,22 @@ p.errorMessage {
 	.resultColumn {
 		padding: 36px 15px 49px;
 	}
+
+	.ROI {
+		flex-direction: column;
+		justify-content: space-evenly;
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 576px) {
 	.topSection h1 {
 		font-size: 19px;
 		margin-bottom: 5px;
+	}
+
+	h4 {
+		font-size: 18px;
 	}
 
 	.topPara {
@@ -198,6 +212,7 @@ p.errorMessage {
 
 	.calculatorColumn p {
 		width: 100%;
+		font-size: 13px;
 	}
 
 	.formSection {
@@ -209,6 +224,7 @@ p.errorMessage {
 
 	button {
 		width: 100%;
+		font-size: 17px;
 	}
 	.resultColumn {
 		padding: 50px 15px;
@@ -220,5 +236,9 @@ p.errorMessage {
 
 	.formSection {
 		padding: 50px 20px;
+	}
+
+	.resultColumn p {
+		text-align: center;
 	}
 }

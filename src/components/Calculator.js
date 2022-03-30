@@ -181,34 +181,34 @@ const Calculator = () => {
                                         </div>
                                         <div className="totalOpens">
                                             <p>Total Opens</p>
-                                            <p>{opens}</p>
+                                            <p className='res'>{opens}</p>
                                         </div>
                                         <div className="totalOpens">
                                             <p>Total Clicks</p>
-                                            <p>{clicks}</p>
+                                            <p className='res'>{clicks}</p>
                                         </div>
                                         <div className="totalOpens">
                                             <p>Total Conversions</p>
-                                            <p>{conversions}</p>
+                                            <p className='res'>{conversions}</p>
                                         </div><div className="totalOpens">
                                             <p>Total Revenue</p>
-                                            <p>{revenue}</p>
+                                            <p className='res'>{revenue}</p>
                                         </div>
                                         <div className="totalOpens">
                                             <p>Total Profit</p>
-                                            <p>{profit}</p>
+                                            <p className='res'>{profit}</p>
                                         </div>
                                         <div className="totalOpens">
                                             <p>Conversion to Break Even</p>
-                                            <p>{breakEven}</p>
+                                            <p className='res'>{breakEven}</p>
                                         </div>
                                         <div className="totalOpens conversions">
                                             <p>Number of Conversions</p>
-                                            <p>{conversions}</p>
+                                            <p className='res'>{conversions}</p>
                                         </div>
                                         <div className="ROI">
                                             <p>ROI (%)</p>
-                                            <p>{roi}</p>
+                                            <p className='res'>{roi}</p>
                                         </div>
                                     </div>
                                 </div>
