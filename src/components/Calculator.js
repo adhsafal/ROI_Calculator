@@ -15,10 +15,6 @@ const Calculator = () => {
     const [breakEven, setBreakEven] = useState()
     const [roi, setRoi] = useState()
 
-    const [curr, setCurr] = useState('$')
-
-
-
     const options = [
         {
             label: '$ USD',
@@ -35,21 +31,21 @@ const Calculator = () => {
     ]
 
     const defaultValues = {
-        currency: '',
-        volume: 10000,
-        cost: 1600,
-        openRate: 30,
-        clickRate: 12,
-        conversionRate: 52.66,
-        averageConversionValue: 15
-
         // currency: '',
-        // volume: '',
-        // cost: '',
-        // openRate: '',
-        // clickRate: '',
-        // conversionRate: '',
-        // averageConversionValue: ''
+        // volume: 10000,
+        // cost: 1600,
+        // openRate: 30,
+        // clickRate: 12,
+        // conversionRate: 52.66,
+        // averageConversionValue: 15
+
+        currency: '',
+        volume: '',
+        cost: '',
+        openRate: '',
+        clickRate: '',
+        conversionRate: '',
+        averageConversionValue: ''
     }
 
     const schema = yup.object({
@@ -65,24 +61,7 @@ const Calculator = () => {
         resolver: yupResolver(schema), defaultValues
     })
 
-    // useEffect(() => {
-    //     onSubmit()
-    // }, [])
-
-
-
     const onSubmit = (values) => {
-        if (values.currency === "Pound") {
-            setCurr("£")
-        }
-
-        else if (values.currency === "Euro") {
-            setCurr("€")
-        }
-
-        else (
-            setCurr('$')
-        )
 
         const resultOpens = (values.openRate * values.volume) / 100;
         setOpens(resultOpens)
@@ -139,7 +118,7 @@ const Calculator = () => {
                                                 <p>Enter the cost for sending this single campaign.
                                                     (Divide your monthly cost by the total campaigns
                                                     sent per month.)</p>
-                                                <CustomInput placeholder={curr} control={control} type='number' name='cost' />
+                                                <CustomInput placeholder='$' control={control} type='number' name='cost' />
                                                 <p className='errorMessage'>{errors.cost?.message}</p>
                                             </div>
                                             <div className="openRate">

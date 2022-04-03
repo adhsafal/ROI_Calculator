@@ -186,6 +186,7 @@ p.errorMessage {
 	}
 	.resultColumn {
 		padding: 36px 15px 49px;
+		margin-top: 50px;
 	}
 
 	.ROI {
@@ -221,13 +222,16 @@ p.errorMessage {
 	.resultColumn {
 		margin-top: 40px;
 	}
-
+	.resultsSection {
+		text-align: center;
+		margin-bottom: 15px;
+	}
 	button {
 		width: 100%;
 		font-size: 17px;
 	}
 	.resultColumn {
-		padding: 50px 15px;
+		padding: 25px 15px;
 	}
 
 	.formContainer {
@@ -240,5 +244,13 @@ p.errorMessage {
 
 	.resultColumn p {
 		text-align: center;
+	}
+
+	.conversions {
+		display: none;
+	}
+
+	.totalOpens {
+		height: 75px;
 	}
 }
